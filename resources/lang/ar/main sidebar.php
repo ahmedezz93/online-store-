@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "dashboard"=>"لوحة التحكم",
+    ""=>"",
+"Hello"=>"مرحبا ",
+'Main'	=>	'الرئيسية'	,
+'categories'	=>	'الفئات'	,
+'view all'	=>	'عرض الكل'	,
+'Add category'	=>	'أضافة فئة'	,
+'sections'	=>	'الاقسام'	,
+'Add a new section'	=>	'أضافة قسم جديد'	,
+'commercial brands'	=>	'الماركات التجارية'	,
+'Add a store'	=>	'أضافة متجر'	,
+'tags'	=>	'العلامات',
+'Add a student'	=>	'أضافة طالب'	,
+'Products'	=>	'المنتجات'	,
+'View products'	=>	'عرض المنتجات'	,
+'Product characteristics'	=>	'خصائص المنتج'	,
+'View properties'	=>	'عرض الخصائص'	,
+'Characteristics details'	=>	'تفاصيل الخصائص'	,
+'View details'	=>	'عرض التفاصيل'	,
+
+'Website photos'	=>'صور الاسليدر',
+'Upload photos'	=>	'تحميل الصور',
+'powers'	=>	'الصلاحيات',
+'control panel users'	=>	'مستخدمي لوحة التحكم',
+'settings'	=>	'الاعدادت',
+'View powers'=>'عرض الصلاحيات',
+'View users'=>'عرض المستخدمين',
+];
