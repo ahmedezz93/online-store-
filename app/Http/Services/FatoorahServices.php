@@ -58,7 +58,7 @@ class FatoorahServices
     public function sendPayment($data)
     {
 
-           $response = $this->buildRequest('/v2/SendPayment', 'POST', $data);
+           $response = $this->buildRequest('v2/SendPayment', 'POST', $data);
 //        if ($response)
 //            $this->saveTransacionPayment($patient_id, $response['Data']['InvoiceId']);
 //
@@ -71,7 +71,7 @@ class FatoorahServices
     public function getPaymentStatus($data)
     {
 
-        return $response = $this->buildRequest('/v2/getPaymentStatus', 'POST', $data);
+        return $response = $this->buildRequest('v2/getPaymentStatus', 'POST', $data);
 
     }
 
