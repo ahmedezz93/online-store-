@@ -5,17 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Image extends Model
+class Album extends Model
 {
     use HasFactory;
+    protected $guarded=['id'];
 
-    protected $guarded=[];
-
-
-    public function imageable()
+    public function images()
     {
-        return $this->morphTo();
+        return $this->morphMany(Image::class, 'imageable');
     }
-
-
-}
+    }

@@ -45,17 +45,11 @@ return [
         ],
 
 
-        'upload_files' => [
-            'driver' => 'local',
-            'root' => public_path('assets/images'),
-            'url' => env('APP_URL').'/storage',
-            'visibility' => 'public',
-            'throw' => false,
-        ],
 
-        'sliders' => [
+
+        'upload_images' => [
             'driver' => 'local',
-            'root' => public_path('assets/images'),
+            'root' => public_path('assets/images/'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
