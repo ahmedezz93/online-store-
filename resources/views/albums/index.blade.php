@@ -74,6 +74,9 @@
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                 aria-label="Basic example">
+                                                                <a href="{{ route('albums.createImages', $album->id) }}"
+                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">Add Images</a>
+
                                                                 <a href="{{ route('albums.edit', $album->id) }}"
                                                                     class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">edit</a>
                                                                 <!-- Button trigger modal -->

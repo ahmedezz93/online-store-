@@ -14,16 +14,11 @@ trait UploadImages
      */
     public function uploadImagesOnServer($directory, $file, $disk = 'upload_images')
     {
-        $names = [];
-
         if ($file) {
             $filename = $file->getClientOriginalName();
             // Store file on server
             $path = $file->storeAs($directory, $filename, $disk);
-            $names[] = ['name' => $path];
         }
-
-        return $names;
     }
 
     public function deleteImagesOnServer($directory, $file_name, $disk = 'upload_images')
@@ -43,8 +38,9 @@ trait UploadImages
 
         foreach ($files as $file) {
             if ($file) {
+                $filename = $file->getClientOriginalName();
                 // Store file on server
-            return     $path = $file->storeAs($directory, $file, $disk);
+                $path = $file->storeAs($directory, $filename, $disk);
             }
         }
     }
