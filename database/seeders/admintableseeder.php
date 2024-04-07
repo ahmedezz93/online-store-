@@ -23,6 +23,7 @@ Admin::create([
 "name"=>["ar"=>"احمد","en"=>"ahmed"],
 "email"=>"admin@yahoo.com",
 "password"=>Hash::make("123456789"),
+"role_id"=>1,
 
 ]);
 
